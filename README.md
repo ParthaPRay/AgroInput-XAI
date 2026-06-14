@@ -1,6 +1,6 @@
 # AgroInput-XAI
 
-**Explainable Modelling of Crop Yield, Fertilizer-Use Efficiency, and Pesticide-Use Efficiency under Soil–Weather Variability**
+**AgroInput-XAI: Explainable Modelling of Crop Yield, Fertilizer-Use Efficiency, and Pesticide-Use Efficiency under Soil--Weather Variability}**
 
 AgroInput-XAI is an explainable machine learning framework for modelling crop yield and sustainable input-efficiency classes using integrated crop-yield, soil, and weather data. The framework combines crop production records, state-level soil properties, annual weather descriptors, feature engineering, statistical testing, regression modelling, classification modelling, and explainable artificial intelligence (XAI) methods.
 
