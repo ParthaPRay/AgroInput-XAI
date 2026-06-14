@@ -41,11 +41,6 @@ The overall AgroInput-XAI workflow includes:
 6. Explainable AI analysis  
 7. Final decision-support outputs  
 
-If the framework figure is included in the repository, it can be displayed as:
-
-```markdown
-![AgroInput-XAI Framework](assets/agroinput_xai_framework_flowchart.png)
-````
 
 ---
 
