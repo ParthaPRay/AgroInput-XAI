@@ -340,44 +340,6 @@ AgroInput-XAI/
     └── figures/
 ```
 
----
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/ParthaPRay/AgroInput-XAI.git
-cd AgroInput-XAI
-```
-
-Create a virtual environment:
-
-```bash
-python -m venv agroinput_xai_env
-```
-
-Activate the environment:
-
-For Linux/macOS:
-
-```bash
-source agroinput_xai_env/bin/activate
-```
-
-For Windows:
-
-```bash
-agroinput_xai_env\Scripts\activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## Required Python Packages
 
@@ -421,45 +383,68 @@ openpyxl
 
 ---
 
-## Running the Notebook
+Replace the **Running the Notebook** section with this Python-script-based version. This matches your GitHub situation because the converted `AgroInput_XAI.py` is used instead of uploading a large `.ipynb` file. 
 
-Open the notebook:
+````markdown
+## Running the Python Script
+
+The original Jupyter Notebook exceeded GitHub's recommended file-size limit. Therefore, the complete notebook workflow has been converted and uploaded as a Python script:
+
+```text
+AgroInput_XAI.py
+````
+
+After installing the required packages, run the complete AgroInput-XAI workflow from the terminal:
 
 ```bash
-jupyter notebook notebooks/AgroInput_XAI.ipynb
+python AgroInput_XAI.py
 ```
 
-or use JupyterLab:
+If the script is placed inside a `src/` or `scripts/` folder, run:
 
 ```bash
-jupyter lab
+python src/AgroInput_XAI.py
 ```
 
-Run the cells sequentially to generate:
+or:
 
-* cleaned and merged dataset
-* engineered features
-* statistical tables
-* regression model results
-* classification model results
-* SHAP explanations
-* permutation-importance outputs
-* LIME explanations
-* residual plots
-* validation tables
-* final output tables and figures
+```bash
+python scripts/AgroInput_XAI.py
+```
 
----
+The script executes the full pipeline, including:
 
-## Output Directory
+* loading crop-yield, weather, and soil datasets
+* cleaning and merging datasets
+* feature engineering
+* statistical analysis
+* regression modelling
+* temporal validation
+* leave-one-state-out validation
+* efficiency-class classification
+* SHAP explainability
+* permutation importance
+* partial dependence analysis
+* LIME local explanations
+* residual and error analysis
+* counterfactual-style fertilizer sensitivity analysis
+* saving output tables and figures
 
-The notebook generates outputs in:
+Before running the script, make sure the input CSV files are available in the expected path:
+
+```text
+crop_yield.csv
+state_weather_data_1997_2020.csv
+state_soil_data.csv
+```
+
+The script generates output files inside:
 
 ```text
 AgroInput_XAI_outputs/
 ```
 
-with subdirectories:
+with the following subfolders:
 
 ```text
 AgroInput_XAI_outputs/
@@ -468,7 +453,10 @@ AgroInput_XAI_outputs/
 └── models/
 ```
 
-Figures are saved as high-resolution PNG and PDF files. Tables are saved as CSV and Excel files.
+Figures are saved in high-resolution PNG and PDF formats, while tables are saved in CSV and Excel formats.
+
+```
+
 
 ---
 
